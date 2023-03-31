@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>MS Technologies</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+
+		.firstsection {
+			background-color: green;
+			height: 400px;
+		}
+
+		.secondsection {
+			background-color: blue;
+			height: 400px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		.section {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 19px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "images/sd1.jpg"
+                width="70"
+                height="50">
+			</div>
+			<li><a href="#web">Product Design</a></li>
+			<li><a href="#program">Manufacturing technology</a></li>
+			<li><a href="#course">Courses</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="web">Product Design</h1>
+				<p class="text-small">
+					The definition of product design describes the process of imagining, creating, and iterating products that solve users’ problems or address specific needs in a given market.
+
+The key to successful product design is understanding the end-user customer, the person for whom the product is being created. Product designers attempt to solve real problems for real people by using empathy and knowledge of their prospective customers’ habits, behaviors, frustrations, needs, and wants.
+
+Ideally, product design’s execution is so flawless that no one notices; users can intuitively use the product as needed because product design understood their needs and anticipated their usage.
+				</p>
+
+
+			</div>
+            <div class="thumbnail">
+                <img src= "images/pd1.jpg" alt="laptop image">
+            </div>
+		</div>
+	</section>
+
+	<section class="secondsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="program">
+					Manufacturing technology
+				</h1>
+				<p class="text-small">
+					Manufacturing technology is a term that can refer to a number of modern methods of science, 
+                    production, and engineering that assist in industrial production and various manufacturing processes.
+                    There are many modern manufacturing technologies, most of them specifically relevant to ‘Industry 4.0’,
+                     the name given to the fourth industrial revolution, associated with automation, data exchange, digital technology, 
+                     artificial intelligence and machine learning, and the ‘Internet of Things’. Therefore, a lot of the manufacturing technologies 
+                    innovating production and industry are also relevant to this fourth wave of technological advancement.
+				</p>
+
+
+			</div>
+            <div class="thumbnail">
+                <img src= "images/mm.jpg" alt="laptop image">
+            </div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="sectionTag text-big">Digital Manufacturing</h1>
+
+			<p class="sectionSubTag text-small">
+				Digital manufacturing is the application of computer systems to manufacturing services,
+                 supply chains, products and processes. Digital manufacturing technologies link systems and processes across all areas of production to create an integrated approach
+                 to manufacturing, from design to production and on to the servicing of the final products.
+                 By modelling and simulating processes it is possible to improve the quality of manufacturing decision making, while improving the processes to create cost savings, reduce time to market,
+                  and create a joined up manufacturing process that unites digital tools with the physical execution of manufacturing.
+			</p>
+
+
+		</div>
+
+		<div class="thumbnail">
+			<img src= "images/dm.jpg" alt="laptop image">
+		</div>
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			BY MUDAVATH SANTHOSH
+		</p>
+
+
+	</footer>
+</body>
+
+</html>
